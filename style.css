@@ -440,6 +440,22 @@ box-shadow: 0px 5px 15px black;
   background-color: whitesmoke;
 }
 
+.weekend-wires {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  row-gap: 40px;
+  column-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
 .DVwireframes {
   display: grid;
   grid-template-columns: 1fr;
@@ -481,6 +497,9 @@ box-shadow: 0px 5px 15px black;
 .dvuserflow-title {
   background-color: whitesmoke;
 }
+.dvuserflow-copy {
+  background-color: whitesmoke;
+}
 
 .dvuserflow-image {
   display: flex;
@@ -504,8 +523,8 @@ box-shadow: 0px 5px 15px black;
 
 .dvscreenshots-body {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   /* margin-left: 10%;
   margin-right: 10%; */
   padding-left: 10%;
@@ -513,7 +532,7 @@ box-shadow: 0px 5px 15px black;
   padding-bottom: 50px;
   padding-top: 30px;
   row-gap: 40px;
-  column-gap: 10px;
+  column-gap: 50px;
   justify-items: center;
   align-items: center;
 }
@@ -749,6 +768,22 @@ box-shadow: 0px 5px 15px black;
     align-items: center;
     column-gap: 0px;
     background-color: whitesmoke;
+  }
+
+  .weekend-wires {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
   }
 
   .DVwireframes {

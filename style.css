@@ -180,6 +180,24 @@ a:hover {
   box-shadow: 0px 5px 15px black;
 }
 
+.ludolabs {
+  display: block;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 0px;
+  transform: scale(1,1);
+  transition: all 0.15s ease-in-out;
+}
+
+.ludolabs:hover {
+  display: block;
+  line-height: 0px;
+  transform: scale(1.01,1.01);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px black;
+}
+
 
 .radialrunner {
   display: block;
@@ -278,6 +296,16 @@ a:hover {
 .body-copy {
   padding-right: 10%;
   padding-bottom: 30px;
+}
+
+.icon-image {
+  display: grid;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  justify-items: center;
+  align-items: center;
 }
 
 .wireframes {
@@ -471,8 +499,8 @@ box-shadow: 0px 5px 15px black;
   display: grid;
   padding-left: 10%;
   padding-right: 10%;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 3%;
+  padding-top: 3%;
   justify-items: center;
   align-items: center;
 }
@@ -674,6 +702,24 @@ box-shadow: 0px 5px 15px black;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 0px 0px black;
   }
+
+  .ludolabs {
+    display: block;
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
+    line-height: 0px;
+    transform: scale(1,1);
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .ludolabs:hover {
+    display: block;
+    line-height: 0px;
+    transform: scale(1,1);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 0px black;
+  }
   
   
   .radialrunner {
@@ -822,8 +868,8 @@ box-shadow: 0px 5px 15px black;
     display: grid;
     padding-left: 3%;
     padding-right: 3%;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 3%;
+    padding-top: 3%;
     justify-items: center;
     align-items: center;
   }
@@ -925,6 +971,15 @@ box-shadow: 0px 5px 15px black;
     background-color: #009385;
   }
 
+  .icon-image {
+    display: flex;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   .wireframes {
     display: grid;
     grid-template-columns: 1fr;
@@ -987,16 +1042,16 @@ box-shadow: 0px 5px 15px black;
   
   .screenshots-body {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     /* margin-left: 10%;
     margin-right: 10%; */
     padding-left: 3%;
     padding-right: 3%;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     padding-top: 30px;
     row-gap: 10px;
-    column-gap: 0px;
+    column-gap: 10px;
     justify-items: center;
     align-items: center;
     background-color: whitesmoke;

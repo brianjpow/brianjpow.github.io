@@ -141,7 +141,16 @@ a:hover {
   font-size: 20px;
   padding-left: 10%;
   padding-top: 2%;
-  background-color: white;
+}
+
+.skills-title {
+  margin-top: 5%;
+  font-size: 20px;
+  padding-left: 10%;
+  padding-top: 2%;
+  font-weight: normal;
+  color: gray;
+  background-color: whitesmoke;
 }
 
 .dragonvale {
@@ -217,18 +226,23 @@ a:hover {
   box-shadow: 0px 5px 15px black;
 }
 
-.animations {
-  display: flex;
-  margin-top: 5%;
+.skillicons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-rows: 1fr;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  row-gap: 40px;
+  column-gap: 100px;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  height: 800px;
   background-color: whitesmoke;
   
 }
-
 
 
 
@@ -266,6 +280,18 @@ a:hover {
   height: auto;
   padding: 50px 50px 50px 50px;
   background-color: #262626;
+}
+
+.ludobanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  height: auto;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #d35934;
 }
 
 .details {
@@ -739,6 +765,34 @@ box-shadow: 0px 5px 15px black;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 0px 0px black;
   }
+
+  .skills-title {
+    margin-top: 5%;
+    font-size: 20px;
+    padding-left: 2.5%;
+    padding-top: 2%;
+    font-weight: normal;
+    color: gray;
+    background-color: whitesmoke;
+  }
+
+  .skillicons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+      grid-template-rows: 1fr;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    row-gap: 40px;
+    column-gap: 40px;
+    justify-items: center;
+    align-items: center;
+    background-color: whitesmoke;
+    
+  }
   
 
 
@@ -751,8 +805,8 @@ box-shadow: 0px 5px 15px black;
     font-size: 20px;
     padding-left: 2%;
     padding-top: 2%;
-    background-color: white;
   }
+
 
 
   .dragonbanner {
@@ -1055,6 +1109,18 @@ box-shadow: 0px 5px 15px black;
     justify-items: center;
     align-items: center;
     background-color: whitesmoke;
+  }
+
+  .ludobanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #d35934;
   }
   
 }

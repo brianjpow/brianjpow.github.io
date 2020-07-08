@@ -244,23 +244,61 @@ a:hover {
   
 }
 
+.aboutme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
 .about-title {
   margin-top: 5%;
   font-size: 20px;
-  padding-left: 20%;
+  padding-left: 10%;
   padding-top: 2%;
   font-weight: normal;
   color: gray;
+}
+
+.about-pic {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .about-copy {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 30px;
   padding-top: 30px;
+}
+
+.brands {
+  width: 100%;
+  /* padding-left: 3%;
+  padding-right: 3%; */
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.btn {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: darkgray;
 }
 
 
@@ -809,6 +847,12 @@ box-shadow: 0px 5px 15px black;
     
   }
 
+  .aboutme {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  
   .about-title {
     margin-top: 5%;
     font-size: 20px;
@@ -816,6 +860,13 @@ box-shadow: 0px 5px 15px black;
     padding-top: 2%;
     font-weight: normal;
     color: gray;
+  }
+  
+  .about-pic {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
   
   .about-copy {
@@ -826,6 +877,28 @@ box-shadow: 0px 5px 15px black;
     padding-right: 3%;
     padding-bottom: 30px;
     padding-top: 30px;
+  }
+
+  .brands {
+    width: 100%;
+    /* padding-left: 3%;
+    padding-right: 3%; */
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
   }
   
 

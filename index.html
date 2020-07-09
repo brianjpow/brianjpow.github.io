@@ -10,127 +10,134 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body> 
-    <!-- <div id="overlay" onclick="off()">
-    </div>
-    
-    <div style="padding:20px">
-      <h2>Overlay with Text</h2>
-      <button onclick="on()">Turn on overlay effect</button>
-    </div> -->
-      <section class="grid-wrapper">
-        <nav class="top sticky">
-          <ul class="main-nav">
-            <li><a href="#design">Work</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="images/resume.pdf" download>Resume</a></li>
-          </ul>
-        </nav>
-        <div class="hero">
-          <div class="name">Brian Powers
-          </div>
-          <!-- <div class="profilepic">
-            <img src="images\profilepic.png"
-            data-aos="fade-left"
-            data-aos-duration="700"
-            data-aos-easing="ease-in-out"
-            data-aos-once="true">
-          </div> -->
-          <div class="title">Designer. Developer. Animator.</div>
+    <section class="grid-wrapper">
+
+
+      <!-- TOP NAV -->
+      <nav class="top sticky">
+        <ul class="main-nav">
+          <li><a href="#design">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="images/resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+
+
+      <!-- HERO BANNER -->
+      <div class="hero">
+        <div class="name">Hi, I'm Brian Powers</div>
+        <div class="title">
+          I design games, interfaces, and user experiences.
         </div>
-          
-        <div class="section-title">Past Projects</div>
-        <section class="design" id="design">
-          <div class="dragonvale">
-            <a href="dragonvale.html">
-            <img src="dragonvale.jpg"
-            class="responsive"></a>
-          </div>
-          <div class="glowbugs">
-            <a href="glowbugs.html">
-            <img src="glowbugs.jpg"
-            class="responsive"></a>
-          </div>
-          <div class="ludolabs">
-            <a href="ludolabs.html">
-            <img src="ludolabs.jpg"
-            class="responsive"></a>
-          </div>
-        </section>
-        <div id="overlay"></div>
-        <div class="skills-title" id="skills">Skills</div>
-        <div class="skillicons">
-          <img src="images/skill_icons/photoshop.jpg"
-            title="Photoshop"
-            class="responsive">
-          <img src="images/skill_icons/after_effects.jpg"
-            title="Illustrator"
-            class="responsive">
-          <img src="images/skill_icons/illustrator.jpg"
-            title="After Effects"
-            class="responsive">
-          <img src="images/skill_icons/premier.jpg"
-            title="Adobe XD"  
-            class="responsive">
-          <img src="images/skill_icons/xd.jpg"
-            title="Premier"
-            class="responsive">
-          <img src="images/skill_icons/figma.jpg"
-            title="Figma"
-            class="responsive">
-          <img src="images/skill_icons/lucidchart.jpg"
-            title="Lucid Chart"  
-            class="responsive">
-          <img src="images/skill_icons/html.jpg"
-            title="html"  
-            class="responsive">
-          <img src="images/skill_icons/css.jpg"
-            title="css"  
-            class="responsive">
-          <img src="images/skill_icons/sass.jpg"
-            title="Sass"  
-            class="responsive">
-          <img src="images/skill_icons/javascript.jpg"
-            title="Javascript"  
-            class="responsive">
-          <img src="images/skill_icons/git.jpg"
-            title="Git"  
-            class="responsive">
-        </div>
-        <div class="about-title" id="about">A little about myself</div>
-        <div class="aboutme ">
-          <div class="about-pic">
-            <img src="images/profilepic2.jpg"
-            class="responsive">
-          </div>
-          <div class="about-copy">
-            My name is Brian Powers and I've been designing and developing games and interactive experiences for over 10 years. I'm passionate about seamless and elegant designs in all areas of life whether it's a mobile app, a desktop website, or even the way a room is laid out. Design influences every area of our life and it should always be clean, responsive, and easy to understand.
-          <br>
-          <br>
-          Over the course of my career I've shipped a diverse catalog of mobile and desktop products. On nearly all these projects I've had to do a little bit of everything, design, prototyping, art, testing, marketing, and so much more. I've been almost entirely self taught and have constantly evolved in my understanding of what drives user engagement, retention and conversions. I'm always learning and striving to improve myself and anything I work on. Passion for life is what allows us to be successful
-          <br>
-          <br>
-          Brands I've worked with:
-          <img src="images/brands.jpg"
-          class="responsive brands">
-          <br>
-          <a href="images/resume.pdf" download>
-            <button class="btn" style="width:100%"><i class="fa fa-download"></i> Download Resume</button>
-            </a>
-          </div>
-          
       </div>
         
-         
+
+      <!-- PAST PROJECTS -->
+      <div class="details body-title">Some past projects</div>
+      <section class="centerimage" id="design">
+        <div class="projectbanner">
+          <a href="dragonvale.html">
+          <img src="dragonvale.jpg"
+          class="responsive"></a>
+        </div>
+        <div class="projectbanner">
+          <a href="glowbugs.html">
+          <img src="glowbugs.jpg"
+          class="responsive"></a>
+        </div>
+        <div class="projectbanner">
+          <a href="ludolabs.html">
+          <img src="ludolabs.jpg"
+          class="responsive"></a>
+        </div>
+      </section>
 
 
+      <!-- SKILLS -->
+      <div class="details body-title graybg" id="skills">
+        A few of my skills
+      </div>
+      <div class="skillicons graybg">
+        <img src="images/skill_icons/photoshop.jpg"
+          title="Photoshop"
+          class="responsive">
+        <img src="images/skill_icons/after_effects.jpg"
+          title="Illustrator"
+          class="responsive">
+        <img src="images/skill_icons/illustrator.jpg"
+          title="After Effects"
+          class="responsive">
+        <img src="images/skill_icons/premier.jpg"
+          title="Adobe XD"  
+          class="responsive">
+        <img src="images/skill_icons/xd.jpg"
+          title="Premier"
+          class="responsive">
+        <img src="images/skill_icons/figma.jpg"
+          title="Figma"
+          class="responsive">
+        <img src="images/skill_icons/lucidchart.jpg"
+          title="Lucid Chart"  
+          class="responsive">
+        <img src="images/skill_icons/html.jpg"
+          title="html"  
+          class="responsive">
+        <img src="images/skill_icons/css.jpg"
+          title="css"  
+          class="responsive">
+        <img src="images/skill_icons/sass.jpg"
+          title="Sass"  
+          class="responsive">
+        <img src="images/skill_icons/javascript.jpg"
+          title="Javascript"  
+          class="responsive">
+        <img src="images/skill_icons/git.jpg"
+          title="Github"  
+          class="responsive">
+        <img src="images/skill_icons/unity.jpg"
+          title="Unity"  
+          class="responsive">
+        <img src="images/skill_icons/maya.jpg"
+          title="Maya"  
+          class="responsive">
+        <img src="images/skill_icons/tableau.jpg"
+          title="Tableau"  
+          class="responsive">
+        <img src="images/skill_icons/hansoft.jpg"
+          title="Hansoft"  
+          class="responsive">
+      </div>
 
 
+      <!-- ABOUT ME -->
+      <div class="details body-title" id="about">A little about myself</div>
+      <div class="aboutme">
+        <div class="about-pic">
+          <img src="images/profilepic2.jpg"
+          class="responsive">
+        </div>
+        <div class="about-copy">
+          <b>Contact: brianjpow@gmail.com</b>
+          <br>
+          My name is Brian Powers and I've been designing and developing games and interactive experiences for over 10 years. I'm passionate about seamless and elegant designs in all areas of life whether it's a mobile app, a desktop website, or even the way a room is laid out. Design influences every area of our life and it should always be clean, responsive, and easy to understand.
+        <br>
+        <br>
+          Over the course of my career I've shipped a diverse catalog of mobile and desktop products. On nearly all these projects I've had to wear multiple hats from design, prototyping, art, testing, marketing, and so much more. I'm almost entirely self taught and have constantly evolved in my understanding of what drives user engagement, retention and conversions. I'm always learning and striving to improve myself and anything I work on.
+          <br>
+          
+        <br>
+        Brands I've worked with:
+        <img src="images/brands.jpg"
+        class="responsive brands">
+        <a href="images/resume.pdf" download>
+          <button class="btn" style="width:100%"><i class="fa fa-download"></i> Download Resume</button>
+          </a>
+        </div>
+      </div>
     </section>
+
     <script type ="text/javascript" src="script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- <script>
-      AOS.init();
-    </script> -->
+
   </body>
 </html>

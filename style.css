@@ -386,6 +386,8 @@ a:hover {
   .threecolumn {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
   }
 
   .fourcolumn {

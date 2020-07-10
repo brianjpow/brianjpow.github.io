@@ -1,10 +1,43 @@
+//Variables
+$background-gray: whitesmoke;
+$sectiontitle_gray: gray;
+$dvcolor: #af010e;
+$gbcolor: #009385;
+$llcolor: #d35934;
+
+//mixins
+@mixin padding-desktop {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@mixin padding-mobile {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+@mixin padding-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@mixin column-setup {
+  display: grid;
+  @include padding-text();
+  row-gap: 40px;
+  column-gap: 40px;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 1fr;
+}
+
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
 }
 
 body {
   margin: auto 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .sticky {
@@ -31,17 +64,17 @@ body {
 li {
   display: flex;
   padding-left: 8%;
-}
-
+ }
+ 
 a {
-  color: gray;
-}
-a:link {
-  text-decoration: none;
-}
-a:hover {
-  color: black;
-  transition: all 0.15s linear;
+  color: $sectiontitle_gray;
+  &:link {
+    text-decoration: none;
+  }
+  &:hover {
+    color:black;
+    transition: all 0.15s linear;
+  }
 }
 
 .grid-wrapper {
@@ -51,44 +84,20 @@ a:hover {
 }
 
 .twocolumn {
-  display: grid;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  row-gap: 40px;
-  column-gap: 40px;
-  justify-items: center;
-  align-items: center;
-  grid-template-rows: 1fr;
-  padding-left: 10%;
-  padding-right: 10%;
+  @include column-setup();
+  @include padding-desktop();
   grid-template-columns: 1fr 1fr;
 }
 
 .threecolumn {
-  display: grid;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  row-gap: 40px;
-  column-gap: 40px;
-  justify-items: center;
-  align-items: center;
-  grid-template-rows: 1fr;
-  padding-left: 10%;
-  padding-right: 10%;
+  @include column-setup();
+  @include padding-desktop();
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .fourcolumn {
-  display: grid;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  row-gap: 40px;
-  column-gap: 40px;
-  justify-items: center;
-  align-items: center;
-  grid-template-rows: 1fr;
-  padding-left: 10%;
-  padding-right: 10%;
+  @include column-setup();
+  @include padding-desktop();
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -97,7 +106,7 @@ a:hover {
 }
 
 .graybg {
-  background-color: whitesmoke;
+  background-color: $background-gray;
 }
 
 .name {
@@ -108,7 +117,7 @@ a:hover {
   padding-left: 9.7%;
   font-size: 70px;
   font-weight: lighter;
-  height: 250px;
+  height:250px;
 }
 
 .title {
@@ -127,8 +136,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  @include padding-text();
   height: auto;
 }
 
@@ -143,25 +151,23 @@ a:hover {
   margin-left: 10%;
   margin-right: 10%;
   line-height: 0px;
-  transform: scale(1, 1);
+  transform: scale(1,1);
   transition: all 0.15s ease-in-out;
-}
-.projectbanner:hover {
-  display: block;
+  &:hover {
+    display: block;
   line-height: 0px;
-  transform: scale(1.01, 1.01);
+  transform: scale(1.01,1.01);
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 5px 15px black;
+  }
 }
 
 .skillicons {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   grid-template-rows: 1fr;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  @include padding-desktop();
+  @include padding-text();
   row-gap: 40px;
   column-gap: 100px;
   justify-items: center;
@@ -172,45 +178,41 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  padding-left: 10%;
-  padding-right: 10%;
+  @include padding-desktop();
 }
+
 
 .about-pic {
   display: flex;
   align-items: flex-start;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  @include padding-text();
 }
 
 .about-copy {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  @include padding-desktop();
+  @include padding-text();
   font-size: 20px;
   font-weight: normal;
 }
 
 .brands {
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  @include padding-text();
 }
 
 .btn {
-  background-color: gray;
+  background-color: $sectiontitle_gray;
   border: none;
   color: white;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
-}
-.btn:hover {
-  background-color: darkgray;
+  &:hover {
+    background-color: darkgray;
+  }
 }
 
 .gamebanner {
@@ -223,16 +225,16 @@ a:hover {
 }
 
 .dvcolor {
-  background-color: #af010e;
+  background-color: $dvcolor;
 }
 
 .gbcolor {
-  background-color: #009385;
+  background-color: $gbcolor;
   padding: 50px 50px 0px 50px;
 }
 
 .llcolor {
-  background-color: #d35934;
+  background-color: $llcolor;
   padding: 50px 50px 0px 50px;
 }
 
@@ -244,18 +246,16 @@ a:hover {
 }
 
 .details {
-  padding-left: 10%;
-  padding-right: 10%;
+  @include padding-desktop();
 }
 
 .body-title {
   display: flex;
   align-items: flex-end;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  @include padding-text();
   font-size: 24px;
   font-weight: normal;
-  color: gray;
+  color: $sectiontitle_gray;
 }
 
 .body-copy {
@@ -269,17 +269,17 @@ a:hover {
   display: grid;
   grid-template-columns: 4fr 1fr 4fr;
   grid-template-rows: 1fr 1fr;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  @include padding-desktop();
+  @include padding-text();
   justify-items: center;
   align-items: center;
   column-gap: 15px;
 }
 
 /* MOBILE SITE */
+
 @media only screen and (max-width: 900px) {
+
   .main-nav {
     justify-content: flex-start;
   }
@@ -291,14 +291,14 @@ a:hover {
 
   .hero {
     height: auto;
-  }
+  } 
 
   .name {
     padding-top: 30px;
     padding-left: 1.5%;
     font-size: 50px;
   }
-
+  
   .title {
     padding-left: 2.5%;
     font-size: 20px;
@@ -306,8 +306,7 @@ a:hover {
   }
 
   .centerimage {
-    padding-left: 3%;
-    padding-right: 3%;
+    @include padding-mobile();
   }
 
   .projectbanner {
@@ -315,26 +314,23 @@ a:hover {
     margin-right: 0%;
     line-height: 0px;
   }
-
+  
   .projectbanner:hover {
-    transform: scale(1, 1);
+    transform: scale(1,1);
     box-shadow: 0px 0px 0px black;
   }
 
   .skillicons {
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    @include padding-mobile();
+    @include padding-text();
     column-gap: 40px;
   }
 
   .aboutme {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    padding-left: 3%;
-    padding-right: 3%;
+    @include padding-mobile();
     padding-top: 2%;
   }
 
@@ -346,11 +342,11 @@ a:hover {
   .gamebanner {
     padding: 10px 10px 10px 10px;
   }
-
+  
   .gbcolor {
     padding: 10px 10px 0px 10px;
   }
-
+  
   .llcolor {
     padding: 10px 10px 0px 10px;
   }
@@ -364,8 +360,7 @@ a:hover {
   }
 
   .details {
-    padding-left: 3%;
-    padding-right: 3%;
+    @include padding-mobile();
   }
 
   .body-copy {
@@ -375,36 +370,29 @@ a:hover {
   .twocolumn {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    @include padding-mobile();
+    @include padding-text();
     row-gap: 10px;
     column-gap: 10px;
   }
-
+  
   .threecolumn {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
-
+  
   .fourcolumn {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    @include padding-mobile();
+    @include padding-text();
     row-gap: 10px;
     column-gap: 10px;
   }
 
   .coreloop-images {
-    padding-left: 3%;
-    padding-right: 3%;
+    @include padding-mobile();
     column-gap: 5px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

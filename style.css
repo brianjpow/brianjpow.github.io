@@ -222,6 +222,10 @@ a:hover {
   padding: 50px 50px 50px 50px;
 }
 
+.bccolor {
+  background-color: #223a7d;
+}
+
 .dvcolor {
   background-color: #af010e;
 }

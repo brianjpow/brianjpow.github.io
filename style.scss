@@ -1,6 +1,7 @@
 //Variables
 $background-gray: whitesmoke;
 $sectiontitle_gray: gray;
+$bccolor: #223a7d;
 $dvcolor: #af010e;
 $gbcolor: #009385;
 $llcolor: #d35934;
@@ -222,6 +223,10 @@ a {
   margin-top: 50px;
   height: auto;
   padding: 50px 50px 50px 50px;
+}
+
+.bccolor {
+  background-color: $bccolor;
 }
 
 .dvcolor {

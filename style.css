@@ -279,6 +279,7 @@ a:hover {
   padding-bottom: 30px;
   justify-items: center;
   align-items: center;
+  row-gap: 15px;
   column-gap: 15px;
 }
 
@@ -388,8 +389,12 @@ a:hover {
   }
 
   .threecolumn {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 30px;
+    padding-bottom: 30px;
     row-gap: 10px;
     column-gap: 10px;
   }
@@ -409,6 +414,7 @@ a:hover {
   .coreloop-images {
     padding-left: 3%;
     padding-right: 3%;
+    row-gap: 10px;
     column-gap: 5px;
   }
 }

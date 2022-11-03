@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body> 
+
+    <form name="CRYPTIC RESCUE MISSION">
+      Q.What year was James born?
+     <br><input type="text" name="q1"><br></br>
+
+    <input type="button" value="submit" onclick="myfun()">
+  </form>
+</body>
+<script type="text/javascript">
+
+  function myfun(){
+    var v1 = document.getElementsByName('q1')[0].value;
+    
+    if(v1=="1983"){
+      alert(" correct, move on");
+        window.location.href = 'C:\Users\brianjpow\Desktop\brianjpow_portfolio\Question 1 post.html';
+    } 
+    else {
+        alert("Incorrect, try again!");
+    }
+        
+    
+    
+  }
+</script>
+</html>
